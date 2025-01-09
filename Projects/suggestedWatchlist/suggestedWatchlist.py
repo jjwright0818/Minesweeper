@@ -7,6 +7,8 @@ from collections import Counter
 KEY = os.environ.get("TMDB_API_KEY", "")
 if not KEY:
     print("Error: TMDB API key not found. Please set it as an environment variable.")
+    exit(1)
+    
 URL = "https://api.themoviedb.org/3"
 
 # clears the terminal, working for both mac and windows
